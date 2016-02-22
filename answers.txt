@@ -1,0 +1,13 @@
+1.a N = 40 
+	13> timer:tc(fib,fib_p,[40]).
+	{6113847,102334155}
+
+1.b Time = 10341
+
+2. 
+15> timer:tc(mobius,find_square_multiples,[4, 30000]).
+{3094,242}
+16> timer:tc(mobius,find_square_multiples,[5, 30000]).
+{12350,844}
+17> timer:tc(mobius,find_square_multiples,[6, 30000]).
+{2334704,22020}
