@@ -21,7 +21,6 @@ private_prime_factors(N, [], 2).
 
 private_prime_factors(1, [], _) -> [1];
 private_prime_factors(1, NumberList, _) -> NumberList;
-%private_prime_factors(N, NumberList, N) -> NumberList ++ [N];
 private_prime_factors(N, NumberList, Devider) -> 
 	if
 		N rem Devider == 0 -> 
